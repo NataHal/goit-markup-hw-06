@@ -504,14 +504,21 @@
           <div class="modal-field">
             <label for="user-comment" class="input-text"> Коментар</label>
 
-            <input
-              type="Введіть текст"
+            <textarea
               class="modal-input comment"
               name="user-comment"
               placeholder="Введіть текст"
               id="user-comment"
-            />
+            ></textarea>
           </div>
+          <div class="modal-field">
+            <input type="checkbox" id="user-accept" name="user-accept"/>
+            <label for="user-accept" class="input-text">Погоджуюся з розсилкою та приймаю
+            <a href="#" class="modal-link active">Умови договору</a>  
+              
+            
+          </div>
+
           <div class="modal-btn">
             <button type="submit" class="modal-btn-btn">Відправити</button>
           </div>

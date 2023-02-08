@@ -635,9 +635,18 @@ ul {
   align-items: center;
   margin-bottom: 24px;
 }
+.modal-close:hover,
+.modal-close:focus {
+  background: var(--accent-color);
+  border-radius: none;
+}
 
 .close-icon {
   fill: #000000;
+}
+.close-icon:hover,
+.close-icon:focus {
+  fill: var(--main-bg-color);
 }
 
 .is-hidden {
@@ -654,13 +663,14 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-color);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .modal-form {
 }
 .modal-field {
-  margin-bottom: 26px;
+  margin-bottom: 8px;
 }
+
 .input-wrap {
   position: relative;
 }
@@ -682,7 +692,23 @@ ul {
   border-color: var(--accent-color);
 }
 .comment {
+  padding: 8px 16px;
   height: 120px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  resize: none;
+}
+.comment::placeholder {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
 }
 .input-icon {
   position: absolute;
@@ -710,6 +736,7 @@ ul {
   color: #757575;
   margin-bottom: 4px;
 }
+
 .modal-btn {
   width: 169px;
   height: 56px;
