@@ -501,6 +501,7 @@ header .container {
   display: inline-block;
   justify-content: center;
   align-items: center;
+  min-width: 231px;
   margin-right: 70px;
 }
 
@@ -611,17 +612,15 @@ header .container {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-btn {
+  display: flex;
+
   width: 200px;
   height: 50px;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 .footer-btn-btn {
-  font-family: "Roboto";
+  font-family: var(--main-font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -631,9 +630,19 @@ header .container {
   align-items: center;
   text-align: center;
   justify-content: center;
+  width: 100%;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--main-bg-color);
   background: var(--accent-color);
+  padding: 13px 28px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.footer-icon {
+  fill: currentColor;
+  margin-left: 10px;
 }
 /*.footer-input::placeholder {
   background: none;
@@ -800,13 +809,14 @@ ul {
 }
 
 .modal-btn {
+  display: block;
   width: 169px;
   height: 56px;
   margin-right: auto;
   margin-left: auto;
 }
 .modal-btn-btn {
-  /*width: 100%;*/
+  width: 100%;
   padding: 16px 32px;
   border: none;
   font-family: var(--main-font-family);
@@ -814,7 +824,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   text-align: center;
   justify-content: center;
