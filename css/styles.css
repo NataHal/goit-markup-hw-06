@@ -168,6 +168,7 @@ header .container {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  transition: background var(--timing-function);
 }
 .features {
   padding-top: 94px;
@@ -609,8 +610,15 @@ header .container {
   border-radius: 4px;
   padding: 15px 295px 15px 16px;
   margin-right: 12px;
+  background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  transition: border var(--timing-function);
 }
+.footer-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .footer-btn {
   display: flex;
 
@@ -639,6 +647,7 @@ header .container {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background var(--timing-function);
 }
 .footer-icon {
   fill: currentColor;
@@ -754,15 +763,14 @@ ul {
   /*margin-bottom: 26px;*/
   padding-left: 40px;
   color: var(--main-color);
-  /*outline-color: var(--accent-color);*/
-  /*display: block;*/
   outline: none;
+  /*display: block;*/
+  transition: fill var(--timing-function);
 }
 
-.modal-input:focus,
-+ .input-icon:focus {
+.modal-input:focus + .input-icon {
   fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 .comment {
   padding: 8px 16px;
@@ -793,8 +801,8 @@ ul {
 }
 /*.modal-input:focus {
   border: 1px solid var(--main-color);
-  fill: var(--accent-color);}
-  */
+  fill: var(--accent-color);
+}*/
 
 .modal-input::placeholder {
 }
@@ -835,6 +843,7 @@ ul {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background var(--timing-function);
 }
 .modal-btn-btn:hover,
 .footer-btn-btn:hover,
