@@ -842,7 +842,7 @@ ul {
 .modal-link {
   border-bottom: 1px solid;
   color: var(--accent-color);
-  margin-left: 2px;
+  margin-left: 4px;
 }
 .check-text {
   display: flex;
