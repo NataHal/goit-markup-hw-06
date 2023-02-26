@@ -596,6 +596,9 @@ header .container {
 .footer-subscribe {
   display: block;
 }
+.footer-input-email {
+  margin-right: 12px;
+}
 .footer-input {
   box-sizing: border-box;
   width: 358px;
@@ -606,7 +609,7 @@ header .container {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 295px 15px 16px;
-  margin-right: 12px;
+  /*margin-right: 12px;*/
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
@@ -616,15 +619,13 @@ header .container {
   border: 1px solid var(--accent-color);
 }
 
-.footer-btn {
+/*.footer-btn {*/
+.footer-btn-btn {
   display: flex;
-
   width: 200px;
   height: 50px;
   margin-right: auto;
   margin-left: auto;
-}
-.footer-btn-btn {
   font-family: var(--main-font-family);
   font-style: normal;
   font-weight: 700;
@@ -650,7 +651,7 @@ header .container {
   fill: currentColor;
   margin-left: 10px;
 }
-.footer-input-wrap {
+.footer-subscribe-email {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -679,31 +680,32 @@ ul {
   border-radius: 4px;
   transform: translate(-50%, -50%) scaleY(1) rotate(0);
   transition: transform 500ms linear;
-  padding: 24px;
+  padding: 72px 24px 24px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0) rotate(-360deg);
 }
 .modal-close {
+  position: absolute;
+  top: 24px;
+  left: 360px;
   width: 24px;
   height: 24px;
   background: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 8px;
-  display: block;
   margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
   transition: background var(--timing-function),
     border-radius var(--timing-function);
 }
 .modal-close:hover,
 .modal-close:focus {
   background: var(--accent-color);
-  border-radius: none;
+  border: none;
 }
 
 .close-icon {
@@ -749,7 +751,7 @@ ul {
   padding-left: 40px;
   color: var(--main-color);
   outline: none;
-  transition: fill var(--timing-function);
+  transition: fill var(--timing-function), border-color var(--timing-function);
 }
 .modal-input:focus {
   border-color: var(--accent-color);
@@ -781,7 +783,6 @@ ul {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-
   fill: var(--main-color);
 }
 
@@ -832,6 +833,7 @@ ul {
 }
 .input-icon {
   fill: var(--main-color);
+  transition: fill var(--timing-function);
 }
 .input-icon:hover,
 .input-icon:focus {
@@ -840,6 +842,7 @@ ul {
 .modal-link {
   border-bottom: 1px solid;
   color: var(--accent-color);
+  margin-left: 2px;
 }
 .check-text {
   display: flex;
@@ -875,6 +878,8 @@ ul {
   justify-content: center;
   fill: var(--main-bg-color);
   margin-right: 8px;
+  transition: background-color var(--timing-function),
+    border var(--timing-function), fill var(--timing-function);
 }
 .input-check:checked + .check-text span {
   background-color: var(--accent-color);

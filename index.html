@@ -444,28 +444,23 @@
         </div>
         <div class="footer-subscribe">
           <h2 class="footer-title">підпишіться на розсилку</h2>
-          <div>
-            <div class="footer-input-wrap">
-              <label for="footer-email">
-                <input
-                  type="email"
-                  class="footer-input"
-                  name="footer-email"
-                  placeholder="E-mail"
-                  required
-                  id="footer-email"
-                />
-              </label>
-              <div class="footer-btn">
-                <button type="submit" class="footer-btn-btn">
-                  Підписатися
-                  <svg width="24" height="24" class="footer-icon">
-                    <use href="./img/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
+          <form class="footer-subscribe-email">
+            <label for="footer-email" class="footer-input-email">
+              <input
+                type="email"
+                class="footer-input"
+                name="footer-email"
+                placeholder="E-mail"
+                ="footer-email"
+              />
+            </label>
+            <button type="submit" class="footer-btn-btn">
+              Підписатися
+              <svg width="24" height="24" class="footer-icon">
+                <use href="./img/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -549,7 +544,7 @@
                 <svg class="-icon-input-check" width="10" height="8">
                   <use href="./img/icons.svg#icon-check"></use></svg></span
               >Погоджуюся з розсилкою та приймаю
-              <a href="#" class="modal-link">Умови договору</a>
+              <a href="#" class="modal-link"> Умови договору</a>
             </label>
           </div>
 
