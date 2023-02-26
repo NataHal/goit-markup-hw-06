@@ -442,9 +442,9 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe"> 
+        <div class="footer-subscribe">
           <h2 class="footer-title">підпишіться на розсилку</h2>
-           <div>
+          <div>
             <div class="footer-input-wrap">
               <label for="footer-email">
                 <input
@@ -457,15 +457,16 @@
                 />
               </label>
               <div class="footer-btn">
-                 <button type="submit" class="footer-btn-btn">
-Підписатися
-<svg width="24" height="24" class="footer-icon">
-                  <use href="./img/icons.svg#icon-send"></use>
-                </svg></button>
-          </div>
+                <button type="submit" class="footer-btn-btn">
+                  Підписатися
+                  <svg width="24" height="24" class="footer-icon">
+                    <use href="./img/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div></div>
           </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -536,8 +537,17 @@
             ></textarea>
           </div>
           <div class="modal-field">
-            <input type="checkbox" id="user-accept" name="user-accept" />
-            <label for="user-accept" class="input-text"
+            <input
+              type="checkbox"
+              id="user-accept"
+              name="user-accept"
+              value="true"
+              class="input-check visually-hidden"
+            />
+            <label for="user-accept" class="check-text"
+              ><span>
+                <svg class="-icon-input-check" width="10" height="8">
+                  <use href="./img/icons.svg#icon-check"></use></svg></span
               >Погоджуюся з розсилкою та приймаю
               <a href="#" class="modal-link">Умови договору</a>
             </label>

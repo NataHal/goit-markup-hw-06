@@ -595,9 +595,6 @@ header .container {
 }
 .footer-subscribe {
   display: block;
-
-  /*width: 570px;
-  min-height: 86px;*/
 }
 .footer-input {
   box-sizing: border-box;
@@ -653,14 +650,6 @@ header .container {
   fill: currentColor;
   margin-left: 10px;
 }
-/*.footer-input::placeholder {
-  background: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 0.6);
-}*/
 .footer-input-wrap {
   display: flex;
   justify-content: center;
@@ -701,9 +690,6 @@ ul {
   background: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  /*position: absolute;
-  top: 24px;
-  right: 24px;*/
   padding: 8px;
   display: block;
   margin-left: auto;
@@ -751,7 +737,7 @@ ul {
   margin-bottom: 8px;
 }
 
-.input-wrap /*.footer-input-wrap*/ {
+.input-wrap {
   position: relative;
 }
 .modal-input {
@@ -760,17 +746,16 @@ ul {
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  /*margin-bottom: 26px;*/
   padding-left: 40px;
   color: var(--main-color);
   outline: none;
-  /*display: block;*/
   transition: fill var(--timing-function);
 }
-
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
-  border-color: var(--accent-color);
 }
 .comment {
   padding: 8px 16px;
@@ -799,10 +784,6 @@ ul {
 
   fill: var(--main-color);
 }
-/*.modal-input:focus {
-  border: 1px solid var(--main-color);
-  fill: var(--accent-color);
-}*/
 
 .modal-input::placeholder {
 }
@@ -834,7 +815,6 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /*display: flex;*/
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -860,4 +840,44 @@ ul {
 .modal-link {
   border-bottom: 1px solid;
   color: var(--accent-color);
+}
+.check-text {
+  display: flex;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 24px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.check-text span {
+  width: 16px;
+  height: 16px;
+  background: ;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--main-bg-color);
+  margin-right: 8px;
+}
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border: none;
+  fill: var(--main-bg-color);
 }
